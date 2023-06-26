@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: url("https://wallpapers.com/images/hd/beautiful-scenery-blue-sea-p8k085mw0svatcu4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+i{
+    font-size: 10vw;
+    color:hsl(0, 100%, 50% ,0.7);
+    filter: drop-shadow(2px 2px 50px rgb(238, 26, 26)) ;
+    
+    opacity: 0;
+    position: absolute;
+}
+.appear{
+    animation:show 1s  infinite alternate-reverse ;
+}
+@keyframes show {
+    0%{
+        opacity: 1;
+        transform: scale(1.2);
+
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    
+}
